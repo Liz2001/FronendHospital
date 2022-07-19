@@ -1,5 +1,6 @@
-
+import { Link } from 'react-router-dom'
 const CitasMedico = (props) => {
+
     return <div className="col-lg-6">
 
                 <div className="row g-3 align-items-center">
@@ -22,7 +23,7 @@ const CitasMedico = (props) => {
                     <div className="col-lg-4">
                         <div className="btn-group-vertical">
                         
-                            <a href="#"className="btn btn-success ">Ver contenido</a>
+                            <a className="btn btn-success ">Ver contenido</a>
                             
                             <div>
 

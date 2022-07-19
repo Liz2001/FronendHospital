@@ -1,27 +1,8 @@
-import Calendario from "../Component/calendario.component"
-import data from "../Resources/data"
-import { Link } from 'react-router-dom'
-import { useEffect, useState} from "react"
-const Pantalla_calendario = () => {
-    const infos = data.data
+import { Link } from "react-router-dom"
 
-    const [listadata, setListadata]=useState([])
-
-    useEffect(()=>{
-        const dataFetch=async()=>{
-            const resp =await fetch("http://localhost:5000/alumno")
-            const data =await resp.json()
-            setListadata(data.data)
-           
-            return data
-        }
-        dataFetch()
-    },[])
-
-
-    return <div className="container ">
-
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+const Home =()=>{
+    return <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <Link className="navbar-brand" to={"/Home"}>Inicio</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,7 +17,7 @@ const Pantalla_calendario = () => {
                             <Link className="nav-link" to={"/Mperfil"}>Mi perfil</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to={"/CALENDARIO"}>Calendario</Link>
+                            <Link className="nav-link" to={"/CALENDARIO"}>Calendario</Link>
                         </li>
                         <li className="nav-item">
 
@@ -54,17 +35,20 @@ const Pantalla_calendario = () => {
                 </div>
             </div>
         </nav>
-
-        <div id="columna " >
-            <div className="row pt-4">
-                    <Calendario citas={listadata} />
-                
-            </div>
-        </div>
-
-
-
-    </div>
+   
+   
+      <div className="row pt-3">
+   
+       <div className="col-lg-12">
+   
+           <img hrf="#" className="img-fluid rounded-start" />
+       </div>
+      </div>
+       
+      
+        
+       
+   </div>
 
 }
-export default Pantalla_calendario
+export default Home
