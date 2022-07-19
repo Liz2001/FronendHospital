@@ -20,15 +20,15 @@ const Home =()=>{
                             <Link className="nav-link" to={"/CALENDARIO"}>Calendario</Link>
                         </li>
                         <li className="nav-item">
-
-                            <Link className="nav-link" to={"#"}>Preguntas</Link>
-
+                            
+                            <Link className="nav-link" to={"/Mconsultas"}>Preguntas</Link>
+                        
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={"/Mcitas_proximas"}>Citas proximas</Link>
+                            <Link className="nav-link"  to={"/Mcitas_proximas"}>Citas proximas</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Historial</a>
+                        <li className="nav-item ">
+                            <Link className="nav-link active"  to={"/ConHist"}>Historial</Link>
                         </li>
                     </ul>
 

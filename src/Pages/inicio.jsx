@@ -27,7 +27,7 @@ const Inicio=()=>{
                                   </div>
                                   <div className="col">
                                     <div className="d-flex justify-content-start">
-                                        <Link to={"#"} className="btn btn-success ">Paciente</Link>
+                                        <Link to={"/loginPaciente"} className="btn btn-success ">Paciente</Link>
                                     </div>
                                   </div>
                                 </div>

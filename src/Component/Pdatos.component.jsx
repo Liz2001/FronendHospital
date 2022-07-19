@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 const Pdatos = () => {
 	return <>
 		<div className="mb-3">
@@ -24,7 +25,7 @@ const Pdatos = () => {
 			<input type="text" className="form-control" placeholder="O" disabled />
 
 		</div>
-		<button type="button" className="btn btn-primary">Historial Clinico</button>
+		<Link className="btn btn-primary" to={"/MHistorial"}>Historial Clinico</Link>
 
 	</>
 }

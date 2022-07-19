@@ -10,10 +10,15 @@ import reportWebVitals from './reportWebVitals';
 import Registro from './Pages/registro';
 import Home from './Pages/home';
 import Inicio from './Pages/inicio';
+import Historial from './Pages/historias';
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import ConsultasP from './Pages/consultasP';
+import HistConsultas from './Pages/historialconsultas';
 
-
+import Login from './Pages/Pacientelogin.page';
+import Register from './Pages/Paciente.register.page';
+import PaginasMedico from './Pages/paginasMedico.page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,8 +34,13 @@ root.render(
         <Route path='/Mcitas_proximas/info' element={<Pm_pcliente/>}/>
         <Route path='/Mregistro' element={<Registro/>}/>
         <Route path='/Home' element={<Home/>}/>
-        <Route path='/Inicio' element={<Inicio/>}/>
-      
+        <Route path='/' element={<Inicio/>}/>
+        <Route path='/MHistorial' element={<Historial/>}/>
+        <Route path='/Mconsultas' element={<ConsultasP/>}/>
+        <Route path="/loginPaciente" element={<Login/>}/>
+        <Route path='/ConHist' element={<HistConsultas/>}/>
+        <Route path="/Pregister" element={<Register/>}/>
+        <Route path="/medico/*" element={<PaginasMedico/>}/>
         
       </Routes>
     </BrowserRouter>

@@ -57,7 +57,7 @@ const Lo_medico = () => {
                   <div className="row">
                     <div className="col">
 
-                      <Link className="btn btn-success" to={"#"} onClick={loguearmedico}>Iniciar sesion</Link>
+                      <Link className="btn btn-success" to={"/Home"} >Iniciar sesion</Link>
 
                     </div>
                     <div className="col">

@@ -22,8 +22,7 @@ const CitasMedico = (props) => {
                     </div>
                     <div className="col-lg-4">
                         <div className="btn-group-vertical">
-                        
-                            <a className="btn btn-success ">Ver contenido</a>
+                        <Link className=" btn btn-success" to={"/Mcitas_proximas/info"}>Ver contenido</Link>
                             
                             <div>
 

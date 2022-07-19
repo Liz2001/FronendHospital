@@ -24,10 +24,7 @@ const Horario = (props) => {
                     <div className="fs-3 text-center">Presencial</div>
                 </div>
                 <div className="card-body">
-                    <FullCalendar
-                        plugins={[dayGridPlugin]}
-                        initialView="dayGridMonth"
-                    />
+                    <Presencial thor={props.thor}/>
                 </div>
 
             </div>

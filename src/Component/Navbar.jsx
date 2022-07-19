@@ -1,16 +1,10 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import ContenedorCitas from "../Component/contenedorCitas.component"
-
-import data from "../Resources/data"
-const Pro_citas_M = () => {
-    const infos = data.data
-    
-        return <body className="container">
-
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+import { Link } from "react-router-dom"
+const Navbar = () => {
+    return (
+        <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-            <Link className="navbar-brand" to={"/Home"}>Inicio</Link>
+                <Link className="navbar-brand" to={"/Home"}>Inicio</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                  aria-expanded="false" aria-label="Toggle navigation">
@@ -31,26 +25,17 @@ const Pro_citas_M = () => {
                         
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active"  to={"/Mcitas_proximas"}>Citas proximas</Link>
+                            <Link className="nav-link"  to={"/Mcitas_proximas"}>Citas proximas</Link>
                         </li>
                         <li className="nav-item ">
-                            <Link className="nav-link "  to={"/ConHist"}>Historial</Link>
+                            <Link className="nav-link active"  to={"/ConHist"}>Historial</Link>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
-
-
-        <div id="columna">
-            <ContenedorCitas info={infos}/>
-            
         </div>
-
-
-    </body>
-    
-
+    )
 }
-export default Pro_citas_M
+export default Navbar
