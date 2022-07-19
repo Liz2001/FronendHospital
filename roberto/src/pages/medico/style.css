@@ -1,0 +1,59 @@
+body{
+    background-color: aliceblue !important;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image-login{
+    background-image: url("../../img/background.jpg");
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.cardMedico{
+    max-width: 600px !important;
+}
+
+img{
+    height: auto;
+}
+.nav-link {
+    cursor:pointer;
+}
+.preguntaExperto{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 120px 0px 120px;
+}
+
+.preguntaExperto .titulo{
+    padding-top: 20px;
+}
+
+.preguntaExperto .imagen{
+    padding-top: 20px;
+}
+
+.inputPregunta{
+    height: 300px;
+    line-height: 40px;
+}
+
+.preguntaExperto .pregunta{
+    background-color: #aee8e2;
+    border-radius: 5px;
+    padding: 20px 25px 20px 25px;
+    margin: 30px;
+}
+
+.perfilDoctor{
+    padding: 30px;
+}
+
+.profileDoctorImage{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
