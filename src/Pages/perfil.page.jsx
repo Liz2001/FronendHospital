@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FotoUsuario from "../Resources/img/usuario.jpg";
+import Extras from "../Component/Recomendaciones";
 const Perfil = (props) => {
   useEffect(() => {
     props.setPaginaActual(1);
@@ -27,7 +28,7 @@ const Perfil = (props) => {
     console.log("Guardar nuevos datos en la base de datos.");
     // nombre, apellido, telefono, usuario, email, contrasena
   };
-  return (
+  return (<>
     <div class="ps-5 pe-5 body">
       <div class="row">
         <div class="col-md-3">
@@ -203,6 +204,8 @@ const Perfil = (props) => {
         </div>
       </div>
     </div>
+    <Extras/>
+    </>
   );
 };
 

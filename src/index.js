@@ -15,10 +15,12 @@ import Historial from './Pages/historias';
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import ConsultasP from './Pages/consultasP';
 import HistConsultas from './Pages/historialconsultas';
-
-import Login from './Pages/Pacientelogin.page';
+import Paginas from "./Pages/paginas.page";
+import Login from './Pages/login.page';
 import Register from './Pages/Paciente.register.page';
 import PaginasMedico from './Pages/paginasMedico.page';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -30,9 +32,10 @@ root.render(
         <Route path='/CALENDARIO' element={<Pantalla_calendario/>}/>
         <Route path='/login' element={<Lo_medico/>}/>
         <Route path='/Mperfil' element={<Perfil_medico/>}/>
+        <Route path='//Mregistro' element={<Registro/>}/>
         <Route path='/Mcitas_proximas' element={<Pro_citas_M/>}/>
         <Route path='/Mcitas_proximas/info' element={<Pm_pcliente/>}/>
-        <Route path='/Mregistro' element={<Registro/>}/>
+        <Route path="/*" element={<Paginas />} />
         <Route path='/Home' element={<Home/>}/>
         <Route path='/' element={<Inicio/>}/>
         <Route path='/MHistorial' element={<Historial/>}/>
@@ -41,7 +44,6 @@ root.render(
         <Route path='/ConHist' element={<HistConsultas/>}/>
         <Route path="/Pregister" element={<Register/>}/>
         <Route path="/medico/*" element={<PaginasMedico/>}/>
-        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

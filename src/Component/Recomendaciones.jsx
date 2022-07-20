@@ -1,9 +1,9 @@
-import agua from "./img/agua.jpg";
-import caminar from "./img/caminar.jpg";
-import mascarilla from "./img/mascarilla.jpg";
-import articulo from "./img/articulo.jpg";
+import agua from "../Resources/img/agua.jpg";
+import caminar from "../Resources/img/caminar.jpg";
+import mascarilla from "../Resources/img/mascarilla.jpg";
+import articulo from "../Resources/img/articulo.jpg";
 
-const extras = () => {
+const Extras = () => {
   const styles = { width: "17rem" };
 
   const recomendacionesData = [
@@ -124,4 +124,4 @@ const extras = () => {
   );
 };
 
-export default extras;
+export default Extras

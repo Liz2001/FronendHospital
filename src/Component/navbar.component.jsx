@@ -37,12 +37,12 @@ const NavbarP = (props) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className={props.paginaActual == 3 ? "nav-link active": "nav-link"}onClick={() => {navigate("/medico/preguntas")}}>
+              <a className={props.paginaActual == 3 ? "nav-link active": "nav-link"} onClick={() => {navigate("/medico/preguntas")}}>
                 Preguntas
               </a>
             </li>
             <li className="nav-item">
-              <a className={props.paginaActual == 4 ? "nav-link active": "nav-link"}>
+              <a className={props.paginaActual == 4 ? "nav-link active": "nav-link"} onClick={() => {navigate("/medico/CitasProximas")}}>
                 Citas próximas
               </a>
             </li>
